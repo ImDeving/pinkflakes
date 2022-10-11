@@ -9,26 +9,109 @@
 0 silly argv }
 1 notice cli v5.6.2
 2 verbose rootPath C:\Users\Tshepo Tsilo\Documents\2022\Tenders\Vodacom\Vodacom POC\Phase 3\Source Code\pinkflakes
-3 info current version independant
+3 info versioning independent
 4 silly isAnythingCommitted
 5 verbose isAnythingCommitted 1
 6 silly getCurrentBranch
 7 verbose currentBranch learning-lerna
 8 silly remoteBranchExists
 9 silly isBehindUpstream
-10 silly isBehindUpstream learning-lerna is behind origin/learning-lerna by 0 commit(s) and ahead by 0
+10 silly isBehindUpstream learning-lerna is behind origin/learning-lerna by 0 commit(s) and ahead by 1
 11 silly hasTags
 12 verbose hasTags false
 13 info Assuming all packages changed
 14 verbose updated sub1
 15 verbose updated sub2
-16 verbose git-describe undefined => "8d6248c"
-17 silly git-describe parsed => {"refCount":"5","sha":"8d6248c","isDirty":false}
-18 error TypeError: Invalid Version: independant
-18 error     at new SemVer (C:\Users\Tshepo Tsilo\Documents\2022\Tenders\Vodacom\Vodacom POC\Phase 3\Source Code\pinkflakes\node_modules\semver\classes\semver.js:38:13)
-18 error     at compare (C:\Users\Tshepo Tsilo\Documents\2022\Tenders\Vodacom\Vodacom POC\Phase 3\Source Code\pinkflakes\node_modules\semver\functions\compare.js:3:32)
-18 error     at Object.lt (C:\Users\Tshepo Tsilo\Documents\2022\Tenders\Vodacom\Vodacom POC\Phase 3\Source Code\pinkflakes\node_modules\semver\functions\lt.js:2:29)
-18 error     at VersionCommand.setGlobalVersionFloor (C:\Users\Tshepo Tsilo\Documents\2022\Tenders\Vodacom\Vodacom POC\Phase 3\Source Code\pinkflakes\node_modules\@lerna\version\index.js:416:18)
-18 error     at C:\Users\Tshepo Tsilo\Documents\2022\Tenders\Vodacom\Vodacom POC\Phase 3\Source Code\pinkflakes\node_modules\@lerna\version\index.js:387:37
-18 error     at processTicksAndRejections (node:internal/process/task_queues:96:5)
-18 error     at async Promise.all (index 0)
+16 verbose git-describe undefined => "b2e95d4"
+17 silly git-describe parsed => {"refCount":"6","sha":"b2e95d4","isDirty":false}
+18 silly independent for sub1 at C:\Users\Tshepo Tsilo\Documents\2022\Tenders\Vodacom\Vodacom POC\Phase 3\Source Code\pinkflakes\packages\sub1
+19 verbose getChangelogConfig using preset "conventional-changelog-angular"
+20 silly npa Result {
+20 silly npa   type: 'tag',
+20 silly npa   registry: true,
+20 silly npa   where: undefined,
+20 silly npa   raw: 'conventional-changelog-angular',
+20 silly npa   name: 'conventional-changelog-angular',
+20 silly npa   escapedName: 'conventional-changelog-angular',
+20 silly npa   scope: undefined,
+20 silly npa   rawSpec: '',
+20 silly npa   saveSpec: null,
+20 silly npa   fetchSpec: 'latest',
+20 silly npa   gitRange: undefined,
+20 silly npa   gitCommittish: undefined,
+20 silly npa   hosted: undefined
+20 silly npa }
+21 verbose getChangelogConfig Attempting to resolve preset "conventional-changelog-angular"
+22 info getChangelogConfig Successfully resolved preset "conventional-changelog-angular"
+23 verbose independent increment 1.0.0 by preminor
+24 silly independent for sub2 at C:\Users\Tshepo Tsilo\Documents\2022\Tenders\Vodacom\Vodacom POC\Phase 3\Source Code\pinkflakes\packages\sub2
+25 verbose independent increment 1.0.0 by prepatch
+26 info execute Skipping releases
+27 silly lifecycle No script for "preversion" in "pinkflakes", continuing
+28 silly lifecycle No script for "preversion" in "sub1", continuing
+29 silly lifecycle No script for "preversion" in "sub2", continuing
+30 verbose version sub1 has no lockfile. Skipping lockfile update.
+31 verbose version sub2 has no lockfile. Skipping lockfile update.
+32 silly lifecycle No script for "version" in "sub1", continuing
+33 silly independent for sub1 at C:\Users\Tshepo Tsilo\Documents\2022\Tenders\Vodacom\Vodacom POC\Phase 3\Source Code\pinkflakes\packages\sub1
+34 silly lifecycle No script for "version" in "sub2", continuing
+35 silly independent for sub2 at C:\Users\Tshepo Tsilo\Documents\2022\Tenders\Vodacom\Vodacom POC\Phase 3\Source Code\pinkflakes\packages\sub2
+36 silly independent writing new entry: "## 1.0.1-alpha.0 (2022-10-11)\n\n**Note:** Version bump only for package sub2\n\n\n\n"
+37 silly independent writing new entry: "# 1.1.0-alpha.0 (2022-10-11)\n\n\n### Features\n\n* entry file for sub1 package ([8d6248c](https://github.com/ImDeving/pinkflakes/commit/8d6248cd83ca58ab188dd65ba99a21c79f028193))\n\n\n\n"
+38 verbose independent wrote C:\Users\Tshepo Tsilo\Documents\2022\Tenders\Vodacom\Vodacom POC\Phase 3\Source Code\pinkflakes\packages\sub2\CHANGELOG.md
+39 verbose independent wrote C:\Users\Tshepo Tsilo\Documents\2022\Tenders\Vodacom\Vodacom POC\Phase 3\Source Code\pinkflakes\packages\sub1\CHANGELOG.md
+40 silly lifecycle No script for "version" in "pinkflakes", continuing
+41 silly gitAdd [
+41 silly gitAdd   'packages/sub1/package.json',
+41 silly gitAdd   'packages/sub2/package.json',
+41 silly gitAdd   'packages/sub2/CHANGELOG.md',
+41 silly gitAdd   'packages/sub1/CHANGELOG.md'
+41 silly gitAdd ]
+42 silly gitCommit Publish
+42 silly gitCommit
+42 silly gitCommit  - sub1@1.1.0-alpha.0
+42 silly gitCommit  - sub2@1.0.1-alpha.0
+43 verbose git [
+43 verbose git   'commit',
+43 verbose git   '-F',
+43 verbose git   'C:\\Users\\TSHEPO~1\\AppData\\Local\\Temp\\928890a0-a1c4-4bb4-b1d9-8f8505a44fb8\\lerna-commit.txt'
+43 verbose git ]
+44 error Error: Command failed with exit code 1: git commit -F C:\Users\TSHEPO~1\AppData\Local\Temp\928890a0-a1c4-4bb4-b1d9-8f8505a44fb8\lerna-commit.txt
+44 error info cli using local version of lerna
+44 error lerna notice cli v5.6.2
+44 error lerna info versioning independent
+44 error lerna notice filter changed since "HEAD"
+44 error lerna notice filter excluding dependents
+44 error lerna info Looking for changed packages since HEAD
+44 error
+44 error  >  Lerna (powered by Nx)   Running target precommit for 2 project(s):
+44 error
+44 error     - sub1
+44 error     - sub2
+44 error
+44 error
+44 error
+44 error > sub1:precommit
+44 error
+44 error sub1: [2K[1G[1myarn run v1.22.19[22m
+44 error sub1: [2K[1G[2m$ echo 'sub1 precommit running'[22m
+44 error sub1: 'sub1 precommit running'
+44 error sub1: [2K[1GDone in 0.23s.
+44 error
+44 error > sub2:precommit
+44 error
+44 error sub2: [2K[1G[1myarn run v1.22.19[22m
+44 error sub2: [2K[1G[2m$ echo 'sub2 precommit running'[22m
+44 error sub2: 'sub2 precommit running'
+44 error sub2: [2K[1GDone in 0.24s.
+44 error
+44 error
+44 error
+44 error  >  Lerna (powered by Nx)   Successfully ran target precommit for 2 projects
+44 error
+44 error
+44 error Aborting commit. Your commit message is invalid.
+44 error     at makeError (C:\Users\Tshepo Tsilo\Documents\2022\Tenders\Vodacom\Vodacom POC\Phase 3\Source Code\pinkflakes\node_modules\execa\lib\error.js:60:11)
+44 error     at handlePromise (C:\Users\Tshepo Tsilo\Documents\2022\Tenders\Vodacom\Vodacom POC\Phase 3\Source Code\pinkflakes\node_modules\execa\index.js:118:26)
+44 error     at processTicksAndRejections (node:internal/process/task_queues:96:5)
+44 error     at async Promise.all (index 0)
