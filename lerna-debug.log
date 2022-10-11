@@ -1,0 +1,34 @@
+0 silly argv {
+0 silly argv   _: [ 'version' ],
+0 silly argv   'conventional-commits': true,
+0 silly argv   conventionalCommits: true,
+0 silly argv   'conventional-prerelease': 'sub1,sub2',
+0 silly argv   conventionalPrerelease: 'sub1,sub2',
+0 silly argv   lernaVersion: '5.6.2',
+0 silly argv   '$0': 'C:\\Users\\Tshepo Tsilo\\AppData\\Roaming\\npm\\node_modules\\lerna\\cli.js'
+0 silly argv }
+1 notice cli v5.6.2
+2 verbose rootPath C:\Users\Tshepo Tsilo\Documents\2022\Tenders\Vodacom\Vodacom POC\Phase 3\Source Code\pinkflakes
+3 info current version independant
+4 silly isAnythingCommitted
+5 verbose isAnythingCommitted 1
+6 silly getCurrentBranch
+7 verbose currentBranch learning-lerna
+8 silly remoteBranchExists
+9 silly isBehindUpstream
+10 silly isBehindUpstream learning-lerna is behind origin/learning-lerna by 0 commit(s) and ahead by 0
+11 silly hasTags
+12 verbose hasTags false
+13 info Assuming all packages changed
+14 verbose updated sub1
+15 verbose updated sub2
+16 verbose git-describe undefined => "8d6248c"
+17 silly git-describe parsed => {"refCount":"5","sha":"8d6248c","isDirty":false}
+18 error TypeError: Invalid Version: independant
+18 error     at new SemVer (C:\Users\Tshepo Tsilo\Documents\2022\Tenders\Vodacom\Vodacom POC\Phase 3\Source Code\pinkflakes\node_modules\semver\classes\semver.js:38:13)
+18 error     at compare (C:\Users\Tshepo Tsilo\Documents\2022\Tenders\Vodacom\Vodacom POC\Phase 3\Source Code\pinkflakes\node_modules\semver\functions\compare.js:3:32)
+18 error     at Object.lt (C:\Users\Tshepo Tsilo\Documents\2022\Tenders\Vodacom\Vodacom POC\Phase 3\Source Code\pinkflakes\node_modules\semver\functions\lt.js:2:29)
+18 error     at VersionCommand.setGlobalVersionFloor (C:\Users\Tshepo Tsilo\Documents\2022\Tenders\Vodacom\Vodacom POC\Phase 3\Source Code\pinkflakes\node_modules\@lerna\version\index.js:416:18)
+18 error     at C:\Users\Tshepo Tsilo\Documents\2022\Tenders\Vodacom\Vodacom POC\Phase 3\Source Code\pinkflakes\node_modules\@lerna\version\index.js:387:37
+18 error     at processTicksAndRejections (node:internal/process/task_queues:96:5)
+18 error     at async Promise.all (index 0)
