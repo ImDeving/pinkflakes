@@ -1,13 +1,13 @@
 {
-  "name": "sub2",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "precommit": "echo 'sub2 precommit running'"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+	"name": "sub2",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"precommit": "echo 'sub2 precommit running'"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC"
 }

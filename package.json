@@ -1,36 +1,36 @@
 {
-  "name": "pinkflakes",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "prepare": "husky install",
-    "commit": "cz"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ImDeving/pinkflakes.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/ImDeving/pinkflakes/issues"
-  },
-  "homepage": "https://github.com/ImDeving/pinkflakes#readme",
-  "devDependencies": {
-    "commitizen": "^4.2.5",
-    "cz-conventional-changelog": "3.3.0",
-    "husky": "^8.0.0",
-    "lerna": "^5.6.2"
-  },
-  "config": {
-    "commitizen": {
-      "path": "./node_modules/cz-conventional-changelog"
-    }
-  },
-  "workspaces": [
-    "packages/*"
-  ]
+	"name": "pinkflakes",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"prepare": "husky install",
+		"commit": "cz"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/ImDeving/pinkflakes.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/ImDeving/pinkflakes/issues"
+	},
+	"homepage": "https://github.com/ImDeving/pinkflakes#readme",
+	"devDependencies": {
+		"commitizen": "^4.2.5",
+		"cz-conventional-changelog": "3.3.0",
+		"husky": "^8.0.0",
+		"lerna": "^5.6.2"
+	},
+	"config": {
+		"commitizen": {
+			"path": "./node_modules/cz-conventional-changelog"
+		}
+	},
+	"workspaces": [
+		"packages/*"
+	]
 }
